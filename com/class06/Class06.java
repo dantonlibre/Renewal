@@ -3,7 +3,7 @@ package com.class06;
 public class Class06 {
 	public static void main(String[] args) {
 
-		int[] num = { 3, 4, 6, 19, 17, -34, 0, 15 };
+		int[] num = { 3, 4, 6, 19, 17, 34, 1, 15 };
 
 		for (int i = 0; i < 8; i++) {
 			System.out.println("Print numbers from 0 -100 = " + i + "Print every element = " + num[i]);
@@ -48,13 +48,46 @@ public class Class06 {
 		int total = 0;
 		for (int i = 0; i < 8; i++) {
 			if (num[i] % 2 == 1) {
-				// sum= sum+num[i];
+				sum = sum + num[i];
 				count++;
 				total++;
-				System.out.println("sum = " + sum + "; count = " + count + "; total = " + total);
+
 			}
 		}
+		System.out.println("sum = " + sum + "; count = " + count + "; total = " + total);
 
+		System.out.println("---------------------------------------------------------");
+		int min = num[0];
+		for (int i = 0; i < 8; i++) {
+			if (num[i] < min) {
+				min = num[i];
+
+			}
+
+		}
+		System.out.println(min);
+
+		System.out.println("--------------------------------------------");
+		int max = num[0];
+		for (int i = 0; i < 8; i++) {
+			if (num[i] > max) {
+				max = num[i];
+			}
+
+		}
+		System.out.println(max);
+        
+		System.out.println("----------------------------------");
+		
+		min = num[0];
+		int minindex = 0;
+		
+		for(int i = 0;i<8;i++) {
+			if(num[i] <min) {
+				min=num[i];
+				minindex=i;
+			}
+		}
+		System.out.println(minindex + " "+min);
 	}
-
 }
