@@ -88,6 +88,6 @@ public class Class06 {
 				minindex=i;
 			}
 		}
-		System.out.println(minindex + " "+min);
+		System.out.println(minindex + "; "+min);
 	}
 }
