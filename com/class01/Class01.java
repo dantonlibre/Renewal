@@ -20,6 +20,6 @@ public class Class01 {
 			System.out.println("B");
 		else if (a <= 90 && a >= 100)
 			System.out.println("A");
+	
 	}
-
 }

@@ -11,7 +11,7 @@ public class Class08 {
 
 			if (num > largest) {
 				largest = num;
-			}
+			} 
 		}
 		System.out.println(largest);
 		System.out.println("------------------------------");
@@ -55,5 +55,4 @@ public class Class08 {
 
 		}
 	}
-
 }
